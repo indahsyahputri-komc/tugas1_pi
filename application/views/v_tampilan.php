@@ -157,21 +157,14 @@ tr:hover {background-color: #f5f5f5;}
 			<td><?php echo $a->agama ?></td>
 			<td><?php echo $a->alamat ?></td>
 			<td><?php echo $a->tlp ?></td>
-<<<<<<< HEAD
 			<td>
 				<?php echo anchor('Mahasiswa/edit/'.$a->id,'Edit'); ?>
 			</td>
 			<td>
 				<?php echo anchor('Mahasiswa/hapus/'.$a->id,'Hapus'); ?>
 			</td>
-=======
-			<!-- <td>
-				<button><?php echo anchor('edit_file/'.$a->ID,'Edit'); ?> </button>
-			</td> -->
-			<!-- <td>
-				<?php echo anchor('hapus_file/'.$a->ID,'Hapus'); ?> 
-			</td> -->
->>>>>>> 555dd0f546d5c3b63241f0db00e36d9e34a1688b
+
+
 		</tr>
 
 	<?php } ?>
