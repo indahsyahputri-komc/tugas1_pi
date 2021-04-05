@@ -23,15 +23,15 @@
 					<td><input type="text" name="Nama" value="<?php echo $a->Nama ?>"></td>
 				</tr>
 
-				<tr>
+				<!-- <tr>
 					 <th>Jenis Kelamin: </th>
 					<td><input type="text" name="Jenis_Kelamin" value="<?php echo $a->Jenis_Kelamin?>"></td>
 				</tr> !
-
-				<!-- <th>Jenis Kelamin: </th>
+ -->
+				<th>Jenis Kelamin: </th>
 				<th><input type="radio" name="Jenis_kelamin" value="Laki-laki">Laki-Laki</th>
 				<th><input type="radio" name="Jenis_kelamin" value="Perempuan">Perempuan</th>
- -->
+
 
 				<tr>
 					<th>Agama: </th>
