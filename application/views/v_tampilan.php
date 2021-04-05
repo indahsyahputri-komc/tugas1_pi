@@ -133,7 +133,8 @@ tr:hover {background-color: #f5f5f5;}
 
 
 	<div class="container">
-		<center><button type="button" class="btn btn-primary" ><?php echo anchor('Mahasiswa/tambah','Tambah Data'); ?>Tambah Data</button></center>
+		<center><a href="<?php echo base_url() ?>index.php/Mahasiswa/tambah/" class="btn btn-md btn-primary">Tambah Data</a></center>
+
 	<table class="table table-hover" style="margin:30px auto;" border="2">
 		<tr>
 			<th>No</th>
@@ -142,7 +143,7 @@ tr:hover {background-color: #f5f5f5;}
 			<th>Agama</th>
 			<th>Alamat</th>
 			<th>Telepon</th>
-			<!-- <th colspan="2">Action</th> -->
+			<th colspan="2">Action</th>
 		</tr>
 
 		<?php
@@ -157,26 +158,25 @@ tr:hover {background-color: #f5f5f5;}
 			<td><?php echo $a->agama ?></td>
 			<td><?php echo $a->alamat ?></td>
 			<td><?php echo $a->tlp ?></td>
-<<<<<<< HEAD
 			<td>
-				<?php echo anchor('Mahasiswa/edit/'.$a->id,'Edit'); ?>
+				<a href="<?php echo base_url() ?>index.php/Mahasiswa/edit/<?php echo $a->id ?>" class="btn btn-sm btn-success">Edit</a>
 			</td>
 			<td>
-				<?php echo anchor('Mahasiswa/hapus/'.$a->id,'Hapus'); ?>
+				<a href="<?php echo base_url() ?>index.php/Mahasiswa/hapus/<?php echo $a->id ?>" class="btn btn-sm btn-danger">Hapus</a>
 			</td>
-=======
+
 			<!-- <td>
 				<button><?php echo anchor('edit_file/'.$a->ID,'Edit'); ?> </button>
 			</td> -->
 			<!-- <td>
 				<?php echo anchor('hapus_file/'.$a->ID,'Hapus'); ?> 
 			</td> -->
->>>>>>> 555dd0f546d5c3b63241f0db00e36d9e34a1688b
+
 		</tr>
 
 	<?php } ?>
 	</table>
-	<button type="button" class="btn btn-danger" >Logout</button>
+
 <br>
 <br>
 </div>
