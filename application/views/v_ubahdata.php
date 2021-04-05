@@ -15,12 +15,12 @@
 			<table border="2">
 				<tr>
 					<th>ID: </th>
-					<td><input type="text" name="ID" value="<?php echo $a->ID ?>"></td>
+					<td><input type="text" name="id" value="<?php echo $a->id ?>"></td>
 				</tr>
 
 				<tr>
 					<th>Nama: </th>
-					<td><input type="text" name="Nama" value="<?php echo $a->Nama ?>"></td>
+					<td><input type="text" name="nama" value="<?php echo $a->nama ?>"></td>
 				</tr>
 
 				<!-- <tr>
@@ -29,22 +29,22 @@
 				</tr> !
  -->
 				<th>Jenis Kelamin: </th>
-				<th><input type="radio" name="Jenis_kelamin" value="Laki-laki">Laki-Laki</th>
-				<th><input type="radio" name="Jenis_kelamin" value="Perempuan">Perempuan</th>
+				<th><input type="radio" name="jk" value="Laki-laki">Laki-Laki</th>
+				<th><input type="radio" name="jk" value="Perempuan">Perempuan</th>
 
 
 				<tr>
 					<th>Agama: </th>
-					<td><input type="text" name="Agama" value="<?php echo $a->Agama?>"></td>
+					<td><input type="text" name="agama" value="<?php echo $a->agama?>"></td>
 				</tr>
 
 				<tr>
 					<th>Alamat: </th>
-					<td><input type="text" name="Alamat" value="<?php echo $a->Alamat?>"></td>
+					<td><input type="text" name="alamat" value="<?php echo $a->alamat?>"></td>
 				</tr>
 				<tr>
 					<th>Nomor Telepon: </th>
-					<td><input type="text" name="Telepon" value="<?php echo $a->Telepon?>"></td>
+					<td><input type="text" name="tlp" value="<?php echo $a->tlp?>"></td>
 				</tr>
 			</table>
 			</center>

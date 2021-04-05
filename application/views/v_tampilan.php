@@ -133,10 +133,10 @@ tr:hover {background-color: #f5f5f5;}
 
 
 	<div class="container">
-		<center><button type="button" class="btn btn-primary" >Tambah Data</button></center>
+		<center><button type="button" class="btn btn-primary" ><?php echo anchor('Mahasiswa/tambah','Tambah Data'); ?>Tambah Data</button></center>
 	<table class="table table-hover" style="margin:30px auto;" border="2">
 		<tr>
-			<th>ID</th>
+			<th>No</th>
 			<th>Nama</th>
 			<th>Jenis Kelamin</th>
 			<th>Agama</th>
@@ -146,23 +146,32 @@ tr:hover {background-color: #f5f5f5;}
 		</tr>
 
 		<?php
-		$ID = 1; 
+		$no = 1; 
 		foreach ($mahasiswatabel as $a) {	
 		?>
 
 		<tr>
-			<td><?php echo $ID++ ?></td>
+			<td><?php echo $no++ ?></td>
 			<td><?php echo $a->nama ?></td>
 			<td><?php echo $a->jk ?></td>
 			<td><?php echo $a->agama ?></td>
 			<td><?php echo $a->alamat ?></td>
 			<td><?php echo $a->tlp ?></td>
+<<<<<<< HEAD
+			<td>
+				<?php echo anchor('Mahasiswa/edit/'.$a->id,'Edit'); ?>
+			</td>
+			<td>
+				<?php echo anchor('Mahasiswa/hapus/'.$a->id,'Hapus'); ?>
+			</td>
+=======
 			<!-- <td>
 				<button><?php echo anchor('edit_file/'.$a->ID,'Edit'); ?> </button>
 			</td> -->
 			<!-- <td>
 				<?php echo anchor('hapus_file/'.$a->ID,'Hapus'); ?> 
 			</td> -->
+>>>>>>> 555dd0f546d5c3b63241f0db00e36d9e34a1688b
 		</tr>
 
 	<?php } ?>
