@@ -142,7 +142,7 @@ tr:hover {background-color: #f5f5f5;}
 			<th>Agama</th>
 			<th>Alamat</th>
 			<th>Telepon</th>
-			<th colspan="2">Action</th>
+			<!-- <th colspan="2">Action</th> -->
 		</tr>
 
 		<?php
@@ -157,12 +157,12 @@ tr:hover {background-color: #f5f5f5;}
 			<td><?php echo $a->agama ?></td>
 			<td><?php echo $a->alamat ?></td>
 			<td><?php echo $a->tlp ?></td>
-			<td>
+			<!-- <td>
 				<button><?php echo anchor('edit_file/'.$a->ID,'Edit'); ?> </button>
-			</td>
-			<td>
-				<button><?php echo anchor('hapus_file/'.$a->ID,'Hapus'); ?> </button>
-			</td>
+			</td> -->
+			<!-- <td>
+				<?php echo anchor('hapus_file/'.$a->ID,'Hapus'); ?> 
+			</td> -->
 		</tr>
 
 	<?php } ?>
