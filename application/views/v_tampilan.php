@@ -31,10 +31,10 @@
 			<td><?php echo $a->alamat ?></td>
 			<td><?php echo $a->tlp ?></td>
 			<td>
-				<?php echo anchor('edit_file/'.$a->ID,'Edit'); ?>
+				<button><?php echo anchor('edit_file/'.$a->ID,'Edit'); ?> </button>
 			</td>
 			<td>
-				<?php echo anchor('hapus_file/'.$a->ID,'Hapus'); ?>
+				<button><?php echo anchor('hapus_file/'.$a->ID,'Hapus'); ?> </button>
 			</td>
 		</tr>
 
